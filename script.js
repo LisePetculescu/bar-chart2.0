@@ -10,6 +10,12 @@ const data = [
 function start() {
   console.log("js is running...");
 
+  setInterval(update, 1000);
+  //   displayAllBars();
+}
+
+function update() {
+  updataData();
   displayAllBars();
 }
 
@@ -22,3 +28,5 @@ function displayAllBars() {
     aBar.style.height = `${height}px`;
   }
 }
+
+function updataData() {}
