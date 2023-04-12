@@ -10,10 +10,15 @@ const data = [
 function start() {
   console.log("js is running...");
 
+  displayAllBars();
+}
+
+function displayAllBars() {
   const bars = document.querySelectorAll(".bar");
-  const firstBar = bars[0];
 
-  let height = (data[0] / 32) * 100;
-
-  firstBar.style.height = `${height}px`;
+  for (let i = 0; i < 40; i++) {
+    const aBar = bars[i];
+    let height = (data[i] / 32) * 100;
+    aBar.style.height = `${height}px`;
+  }
 }
