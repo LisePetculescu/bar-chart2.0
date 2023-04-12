@@ -1,0 +1,12 @@
+#bars {
+    display: grid;
+    grid-template-columns: repeat(40, 1fr);
+    gap: 2px;
+}
+
+
+.bar {
+    background-color: pink;
+    border: 2px solid rgb(243, 92, 117);
+    height: 100px;
+}
